@@ -1,0 +1,25 @@
+{"time":"2025-09-09T22:58:43.8665622+05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-09-09T22:58:44.3599787+05:00","level":"INFO","msg":"stream: created new stream","id":"l7eplm1r"}
+{"time":"2025-09-09T22:58:44.3599787+05:00","level":"INFO","msg":"stream: started","id":"l7eplm1r"}
+{"time":"2025-09-09T22:58:44.3606104+05:00","level":"INFO","msg":"sender: started","stream_id":"l7eplm1r"}
+{"time":"2025-09-09T22:58:44.3599787+05:00","level":"INFO","msg":"handler: started","stream_id":"l7eplm1r"}
+{"time":"2025-09-09T22:58:44.3606104+05:00","level":"INFO","msg":"writer: started","stream_id":"l7eplm1r"}
+{"time":"2025-09-09T23:04:34.4133393+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": unexpected EOF"}
+{"time":"2025-09-09T23:06:12.2729687+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": read tcp 192.168.18.12:61262->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-09-09T23:07:13.7891801+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": read tcp 192.168.18.12:61311->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-09-09T23:07:30.1474858+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:08:02.5033897+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:08:36.8140907+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:09:16.586649+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:10:02.2667772+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": unexpected EOF"}
+{"time":"2025-09-09T23:10:40.9332728+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": read tcp 192.168.18.12:61348->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-09-09T23:11:58.8276646+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": read tcp 192.168.18.12:61349->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-09-09T23:13:04.888094+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": unexpected EOF"}
+{"time":"2025-09-09T23:14:30.3414032+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:15:02.721907+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-09-09T23:15:04.5834038+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/l7eplm1r/file_stream\": read tcp 192.168.18.12:61373->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-09-09T23:19:13.9575183+05:00","level":"INFO","msg":"stream: closing","id":"l7eplm1r"}
+{"time":"2025-09-09T23:19:15.1550462+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-09T23:19:15.8721388+05:00","level":"INFO","msg":"handler: closed","stream_id":"l7eplm1r"}
+{"time":"2025-09-09T23:19:15.8726454+05:00","level":"INFO","msg":"sender: closed","stream_id":"l7eplm1r"}
+{"time":"2025-09-09T23:19:15.8726454+05:00","level":"INFO","msg":"stream: closed","id":"l7eplm1r"}

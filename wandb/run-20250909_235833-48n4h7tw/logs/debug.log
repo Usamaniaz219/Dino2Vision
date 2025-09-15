@@ -1,0 +1,23 @@
+2025-09-09 23:58:33,926 INFO    MainThread:21496 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-09-09 23:58:33,926 INFO    MainThread:21496 [wandb_setup.py:_flush():81] Configure stats pid to 21496
+2025-09-09 23:58:33,926 INFO    MainThread:21496 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\.config\wandb\settings
+2025-09-09 23:58:33,926 INFO    MainThread:21496 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\settings
+2025-09-09 23:58:33,926 INFO    MainThread:21496 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-09-09 23:58:33,928 INFO    MainThread:21496 [wandb_init.py:setup_run_log_directory():686] Logging user logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250909_235833-48n4h7tw\logs\debug.log
+2025-09-09 23:58:33,931 INFO    MainThread:21496 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250909_235833-48n4h7tw\logs\debug-internal.log
+2025-09-09 23:58:33,931 INFO    MainThread:21496 [wandb_init.py:init():813] calling init triggers
+2025-09-09 23:58:33,931 INFO    MainThread:21496 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'task': 'classification', 'num_classes': 2, 'backbone': 'vit_base_patch14_dinov2', 'pretrained': True, 'fine_tune_strategy': 'partial', 'unfreeze_blocks': 4, 'epochs': 50, 'batch_size': 4, 'lr': 0.0001, 'weight_decay': 0.05, 'grad_clip': 1.0, 'amp': True, 'ckpt_dir': './checkpoints', 'early_stop': 10, 'seed': 42, 'workers': 4, 'resume': None, 'mask_suffix': '_mask.png', 'tracker': 'wandb', 'experiment_name': 'my-classification-experiment', 'log_dir': './logs', 'local_rank': 0, 'log_level': 'INFO', 'log_file': None, '_wandb': {}}
+2025-09-09 23:58:33,931 INFO    MainThread:21496 [wandb_init.py:init():854] starting backend
+2025-09-09 23:58:36,211 INFO    MainThread:21496 [wandb_init.py:init():857] sending inform_init request
+2025-09-09 23:58:36,271 INFO    MainThread:21496 [wandb_init.py:init():865] backend started and connected
+2025-09-09 23:58:36,281 INFO    MainThread:21496 [wandb_init.py:init():936] updated telemetry
+2025-09-09 23:58:36,286 INFO    MainThread:21496 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-09-09 23:58:37,649 INFO    MainThread:21496 [wandb_init.py:init():1011] starting run threads in backend
+2025-09-09 23:58:38,091 INFO    MainThread:21496 [wandb_run.py:_console_start():2494] atexit reg
+2025-09-09 23:58:38,091 INFO    MainThread:21496 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-09-09 23:58:38,092 INFO    MainThread:21496 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-09-09 23:58:38,093 INFO    MainThread:21496 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-09-09 23:58:38,101 INFO    MainThread:21496 [wandb_init.py:init():1057] run started, returning control to user process
+2025-09-10 00:03:18,625 INFO    wandb-AsyncioManager-main:21496 [service_client.py:_forward_responses():84] Reached EOF.
+2025-09-10 00:03:18,626 INFO    wandb-AsyncioManager-main:21496 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

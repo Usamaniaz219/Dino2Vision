@@ -1,0 +1,35 @@
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x000002BFDBB2C2C0>
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\utils\data\dataloader.py", line 1664, in __del__
+    self._shutdown_workers()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\utils\data\dataloader.py", line 1628, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 149, in join
+    res = self._popen.wait(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 112, in wait
+    res = _winapi.WaitForSingleObject(int(self._handle), msecs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "c:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\main.py", line 132, in <module>
+    main()
+  File "c:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\main.py", line 121, in main
+    best_val_acc = run_training_epochs(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\utils\helpers.py", line 137, in run_training_epochs
+    tr_loss, tr_acc, tr_time = train_one_epoch(
+                               ^^^^^^^^^^^^^^^^
+  File "c:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\training\trainer.py", line 48, in train_one_epoch
+    loss.backward()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\autograd\__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\autograd\graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\utils\checkpoint.py", line 1131, in unpack_hook
+    def unpack_hook(holder):
+
+KeyboardInterrupt

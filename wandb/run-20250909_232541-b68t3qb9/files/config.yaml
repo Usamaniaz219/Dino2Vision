@@ -1,0 +1,126 @@
+_wandb:
+    value:
+        cli_version: 0.21.3
+        e:
+            cki9cc426s7b6vjncj8vg4jhe0fsx3gu:
+                args:
+                    - --task
+                    - classification
+                    - --num-classes
+                    - "2"
+                    - --train-dir
+                    - C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\data\train
+                    - --val-dir
+                    - C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\data\val
+                    - --backbone
+                    - vit_base_patch14_dinov2
+                    - --epochs
+                    - "50"
+                    - --batch-size
+                    - "4"
+                    - --lr
+                    - "1e-4"
+                    - --tracker
+                    - wandb
+                    - --experiment-name
+                    - my-classification-experiment
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "1022659727360"
+                        used: "145787990016"
+                email: ahmadusama34@gmail.com
+                executable: C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Scripts\python.exe
+                gpu: NVIDIA GeForce MX450
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 896
+                      memoryTotal: "2147483648"
+                      name: NVIDIA GeForce MX450
+                      uuid: GPU-b14f92c3-bc2e-4279-c1e9-312065db8eff
+                host: OsamaAhmed
+                memory:
+                    total: "34035949568"
+                os: Windows-11-10.0.26100-SP0
+                program: C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\main.py
+                python: CPython 3.12.5
+                root: C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project
+                startedAt: "2025-09-09T18:25:41.731139Z"
+                writerId: cki9cc426s7b6vjncj8vg4jhe0fsx3gu
+        m: []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 63
+                - 80
+            "2":
+                - 1
+                - 41
+                - 49
+                - 63
+                - 80
+            "3":
+                - 16
+                - 61
+            "4": 3.12.5
+            "5": 0.21.3
+            "8":
+                - 3
+            "12": 0.21.3
+            "13": windows-amd64
+amp:
+    value: true
+backbone:
+    value: vit_base_patch14_dinov2
+batch_size:
+    value: 4
+ckpt_dir:
+    value: ./checkpoints
+early_stop:
+    value: 10
+epochs:
+    value: 50
+experiment_name:
+    value: my-classification-experiment
+fine_tune_strategy:
+    value: partial
+grad_clip:
+    value: 1
+local_rank:
+    value: 0
+log_dir:
+    value: ./logs
+log_file:
+    value: null
+log_level:
+    value: INFO
+lr:
+    value: 0.0001
+mask_suffix:
+    value: _mask.png
+num_classes:
+    value: 2
+pretrained:
+    value: true
+resume:
+    value: null
+seed:
+    value: 42
+task:
+    value: classification
+tracker:
+    value: wandb
+unfreeze_blocks:
+    value: 4
+weight_decay:
+    value: 0.05
+workers:
+    value: 4

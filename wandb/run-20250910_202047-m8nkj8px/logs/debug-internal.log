@@ -1,0 +1,13 @@
+{"time":"2025-09-10T20:20:50.0297527+05:00","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-09-10T20:20:50.5500192+05:00","level":"INFO","msg":"stream: created new stream","id":"m8nkj8px"}
+{"time":"2025-09-10T20:20:50.5500192+05:00","level":"INFO","msg":"stream: started","id":"m8nkj8px"}
+{"time":"2025-09-10T20:20:50.5500192+05:00","level":"INFO","msg":"handler: started","stream_id":"m8nkj8px"}
+{"time":"2025-09-10T20:20:50.5500192+05:00","level":"INFO","msg":"sender: started","stream_id":"m8nkj8px"}
+{"time":"2025-09-10T20:20:50.5500192+05:00","level":"INFO","msg":"writer: started","stream_id":"m8nkj8px"}
+{"time":"2025-09-10T20:43:54.4557659+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ahmadusama34-gmail-com/my-classification-experiment/m8nkj8px/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-09-10T20:44:20.2120141+05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.18.12:63096->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-09-10T20:50:34.2271389+05:00","level":"INFO","msg":"stream: closing","id":"m8nkj8px"}
+{"time":"2025-09-10T20:50:35.4305793+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-10T20:50:35.9582987+05:00","level":"INFO","msg":"sender: closed","stream_id":"m8nkj8px"}
+{"time":"2025-09-10T20:50:35.9599936+05:00","level":"INFO","msg":"handler: closed","stream_id":"m8nkj8px"}
+{"time":"2025-09-10T20:50:35.9605691+05:00","level":"INFO","msg":"stream: closed","id":"m8nkj8px"}

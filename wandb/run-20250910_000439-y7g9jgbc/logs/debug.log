@@ -1,0 +1,51 @@
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_setup.py:_flush():81] Configure stats pid to 6376
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\.config\wandb\settings
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\settings
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_init.py:setup_run_log_directory():686] Logging user logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250910_000439-y7g9jgbc\logs\debug.log
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250910_000439-y7g9jgbc\logs\debug-internal.log
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_init.py:init():813] calling init triggers
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'task': 'classification', 'num_classes': 2, 'backbone': 'vit_base_patch14_dinov2', 'pretrained': True, 'fine_tune_strategy': 'partial', 'unfreeze_blocks': 4, 'epochs': 50, 'batch_size': 4, 'lr': 0.0001, 'weight_decay': 0.05, 'grad_clip': 1.0, 'amp': True, 'ckpt_dir': './checkpoints', 'early_stop': 10, 'seed': 42, 'workers': 4, 'resume': None, 'mask_suffix': '_mask.png', 'tracker': 'wandb', 'experiment_name': 'my-classification-experiment', 'log_dir': './logs', 'local_rank': 0, 'log_level': 'INFO', 'log_file': None, '_wandb': {}}
+2025-09-10 00:04:39,233 INFO    MainThread:6376 [wandb_init.py:init():854] starting backend
+2025-09-10 00:04:41,535 INFO    MainThread:6376 [wandb_init.py:init():857] sending inform_init request
+2025-09-10 00:04:41,571 INFO    MainThread:6376 [wandb_init.py:init():865] backend started and connected
+2025-09-10 00:04:41,575 INFO    MainThread:6376 [wandb_init.py:init():936] updated telemetry
+2025-09-10 00:04:41,579 INFO    MainThread:6376 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-09-10 00:04:45,442 INFO    MainThread:6376 [wandb_init.py:init():1011] starting run threads in backend
+2025-09-10 00:04:45,664 INFO    MainThread:6376 [wandb_run.py:_console_start():2494] atexit reg
+2025-09-10 00:04:45,665 INFO    MainThread:6376 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-09-10 00:04:45,665 INFO    MainThread:6376 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-09-10 00:04:45,665 INFO    MainThread:6376 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-09-10 00:04:45,672 INFO    MainThread:6376 [wandb_init.py:init():1057] run started, returning control to user process
+2025-09-10 00:05:17,234 ERROR   wandb-AsyncioManager-main:6376 [service_client.py:_forward_responses():81] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 462, in finish_socket_func
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 77, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 91, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 752, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 545, in _wait_for_data
+    await self._waiter
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 803, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 466, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2025-09-10 00:05:17,328 INFO    wandb-AsyncioManager-main:6376 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

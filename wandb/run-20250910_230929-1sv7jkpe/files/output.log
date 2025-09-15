@@ -1,0 +1,2 @@
+C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\training\trainer.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=scaler is not None):

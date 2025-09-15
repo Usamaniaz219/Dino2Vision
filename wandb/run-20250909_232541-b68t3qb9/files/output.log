@@ -1,0 +1,89 @@
+C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\training\trainer.py:36: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=scaler is not None):
+C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\amp\autocast_mode.py:266: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn(
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\main.py", line 130, in <module>
+    main()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\main.py", line 119, in main
+    best_val_acc = run_training_epochs(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\utils\helpers.py", line 137, in run_training_epochs
+    tr_loss, tr_acc, tr_time = train_one_epoch(
+                               ^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\training\trainer.py", line 37, in train_one_epoch
+    outputs = model(images)
+              ^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\models\classifier.py", line 131, in forward
+    feats = self.backbone(x)  # [B, C]
+            ^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\models\classifier.py", line 41, in forward
+    return self.backbone(x)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\models\vision_transformer.py", line 993, in forward
+    x = self.forward_features(x, attn_mask=attn_mask)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\models\vision_transformer.py", line 946, in forward_features
+    x = checkpoint_seq(self.blocks, x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\models\_manipulate.py", line 278, in checkpoint_seq
+    x = torch.utils.checkpoint.checkpoint(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\_compile.py", line 53, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\_dynamo\eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\utils\checkpoint.py", line 495, in checkpoint
+    ret = function(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\models\_manipulate.py", line 261, in forward
+    _x = functions[j](_x)
+         ^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\models\vision_transformer.py", line 177, in forward
+    x = x + self.drop_path2(self.ls2(self.mlp(self.norm2(x))))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\timm\layers\mlp.py", line 48, in forward
+    x = self.fc2(x)
+        ^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

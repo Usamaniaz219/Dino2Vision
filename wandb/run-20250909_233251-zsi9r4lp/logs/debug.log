@@ -1,0 +1,188 @@
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_setup.py:_flush():81] Configure stats pid to 12036
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\.config\wandb\settings
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_setup.py:_flush():81] Loading settings from C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\settings
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_init.py:setup_run_log_directory():686] Logging user logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250909_233251-zsi9r4lp\logs\debug.log
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dinov3_project\wandb\run-20250909_233251-zsi9r4lp\logs\debug-internal.log
+2025-09-09 23:32:51,708 INFO    MainThread:12036 [wandb_init.py:init():813] calling init triggers
+2025-09-09 23:32:51,724 INFO    MainThread:12036 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'task': 'classification', 'num_classes': 2, 'backbone': 'vit_base_patch14_dinov2', 'pretrained': True, 'fine_tune_strategy': 'partial', 'unfreeze_blocks': 4, 'epochs': 50, 'batch_size': 4, 'lr': 0.0001, 'weight_decay': 0.05, 'grad_clip': 1.0, 'amp': True, 'ckpt_dir': './checkpoints', 'early_stop': 10, 'seed': 42, 'workers': 4, 'resume': None, 'mask_suffix': '_mask.png', 'tracker': 'wandb', 'experiment_name': 'my-classification-experiment', 'log_dir': './logs', 'local_rank': 0, 'log_level': 'INFO', 'log_file': None, '_wandb': {}}
+2025-09-09 23:32:51,725 INFO    MainThread:12036 [wandb_init.py:init():854] starting backend
+2025-09-09 23:32:54,000 INFO    MainThread:12036 [wandb_init.py:init():857] sending inform_init request
+2025-09-09 23:32:54,061 INFO    MainThread:12036 [wandb_init.py:init():865] backend started and connected
+2025-09-09 23:32:54,066 INFO    MainThread:12036 [wandb_init.py:init():936] updated telemetry
+2025-09-09 23:32:54,069 INFO    MainThread:12036 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout
+2025-09-09 23:32:58,390 INFO    MainThread:12036 [wandb_init.py:init():1011] starting run threads in backend
+2025-09-09 23:32:58,770 INFO    MainThread:12036 [wandb_run.py:_console_start():2494] atexit reg
+2025-09-09 23:32:58,771 INFO    MainThread:12036 [wandb_run.py:_redirect():2342] redirect: wrap_raw
+2025-09-09 23:32:58,771 INFO    MainThread:12036 [wandb_run.py:_redirect():2411] Wrapping output streams.
+2025-09-09 23:32:58,772 INFO    MainThread:12036 [wandb_run.py:_redirect():2434] Redirects installed.
+2025-09-09 23:32:58,775 INFO    MainThread:12036 [wandb_init.py:init():1057] run started, returning control to user process
+2025-09-09 23:57:54,343 INFO    wandb-AsyncioManager-main:12036 [service_client.py:_forward_responses():84] Reached EOF.
+2025-09-09 23:57:54,344 INFO    wandb-AsyncioManager-main:12036 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-09-09 23:57:56,014 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,027 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,027 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,119 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,119 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,126 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,128 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,128 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,128 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,135 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,180 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,180 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,180 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,180 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-09-09 23:57:56,188 ERROR   wandb-AsyncioManager-main:12036 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\osama\OneDrive\Desktop\Usama_dev\Fine_tuning_DINOv3\dino_env\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "C:\Users\osama\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
