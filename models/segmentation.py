@@ -6,7 +6,7 @@ import logging
 from .classifier import DinoV2BackboneWrapper
 
 
-class DinoV3SegHead(nn.Module):
+class DinoV2SegHead(nn.Module):
     """
     Production-ready DINOv3 segmentation head.
     """
