@@ -13,7 +13,7 @@ from data.collate import create_collate_fn
 from data.datasets import SegmentationDataset
 from models.backbone import build_backbone, apply_fine_tune_strategy
 from models.classifier import DinoClassifier
-from models.segmentation import DinoV3SegHead
+from models.segmentation import DinoV2SegHead
 from tracking.tracker import TrackerType, ExperimentTracker
 from training.trainer import train_one_epoch
 from training.evaluator import evaluate
@@ -115,7 +115,7 @@ def setup_model(cfg, device):
     if cfg.task == 'classification':
         model = DinoClassifier(backbone, cfg.num_classes)
     elif cfg.task == 'segmentation':
-        model = DinoV3SegHead(backbone, cfg.num_classes)
+        model = DinoV2SegHead(backbone, cfg.num_classes)
     else:
         raise ValueError("task must be 'classification' or 'segmentation'")
 

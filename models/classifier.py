@@ -9,7 +9,7 @@ from functools import partial
 import timm
 
 
-class DinoV3BackboneWrapper(nn.Module):
+class DinoV2BackboneWrapper(nn.Module):
     """
     Wrapper for DINOv3 backbones to provide consistent interface.
     """
@@ -98,7 +98,7 @@ class DinoClassifier(nn.Module):
         head_type: str = "linear"
     ):
         super().__init__()
-        self.backbone = DinoV3BackboneWrapper(backbone)
+        self.backbone = DinoV2BackboneWrapper(backbone)
         feature_dim = self.backbone.num_features
         
         # Build classification head

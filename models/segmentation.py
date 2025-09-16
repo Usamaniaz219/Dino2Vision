@@ -3,10 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from typing import Tuple, Optional
 import logging
-from .classifier import DinoV3BackboneWrapper
+from .classifier import DinoV2BackboneWrapper
 
 
-class DinoV3SegHead(nn.Module):
+class DinoV2SegHead(nn.Module):
     """
     Production-ready DINOv3 segmentation head.
     """
@@ -23,7 +23,7 @@ class DinoV3SegHead(nn.Module):
         use_attention: bool = False
     ):
         super().__init__()
-        self.backbone = DinoV3BackboneWrapper(backbone)
+        self.backbone = DinoV2BackboneWrapper(backbone)
         self.upsample_mode = upsample_mode
         self.align_corners = align_corners
         self.num_classes = num_classes
@@ -166,11 +166,11 @@ def create_dino_segmentation(
     num_classes: int = 21,
     pretrained: bool = True,
     **kwargs
-) -> DinoV3SegHead:
+) -> DinoV2SegHead:
     """Create a DINOv3 segmentation model."""
     try:
         backbone = timm.create_model(model_name, pretrained=pretrained, num_classes=0)
-        return DinoV3SegHead(backbone, num_classes, **kwargs)
+        return DinoV2SegHead(backbone, num_classes, **kwargs)
     except ImportError:
         raise ImportError("timm library is required for DINOv3 models")
     except Exception as e:
