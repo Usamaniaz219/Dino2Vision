@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from typing import Tuple, Optional
 import logging
-from .classifier import DinoV3BackboneWrapper
+from .classifier import DinoV2BackboneWrapper
 
 
 class DinoV3SegHead(nn.Module):
