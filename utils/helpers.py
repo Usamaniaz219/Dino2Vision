@@ -67,42 +67,6 @@ def create_data_loaders(cfg, train_dir, val_dir):
 
     return train_loader, val_loader, criterion
 
-# def create_data_loaders(cfg, train_dir, val_dir):
-#     """Create appropriate data loaders based on task"""
-#     backbone = build_backbone(cfg.backbone, pretrained=cfg.pretrained)
-#     transform, image_size, _ = build_transforms(backbone)
-
-#     if cfg.task == 'classification':
-#         train_ds = datasets.ImageFolder(train_dir)
-#         val_ds = datasets.ImageFolder(val_dir)
-#         train_loader = DataLoader(
-#             train_ds, batch_size=cfg.batch_size, shuffle=True,
-#             num_workers=cfg.workers, pin_memory=True,
-#             collate_fn=collate_with_transform_classification(transform)
-#         )
-#         val_loader = DataLoader(
-#             val_ds, batch_size=cfg.batch_size, shuffle=False,
-#             num_workers=cfg.workers, pin_memory=True,
-#             collate_fn=collate_with_transform_classification(transform)
-#         )
-#         criterion = nn.CrossEntropyLoss()
-#     else:
-#         train_ds = SegmentationDataset(train_dir, transform=None, mask_suffix=cfg.mask_suffix)
-#         val_ds = SegmentationDataset(val_dir, transform=None, mask_suffix=cfg.mask_suffix)    
-#         train_loader = DataLoader(
-#             train_ds, batch_size=cfg.batch_size, shuffle=True,
-#             num_workers=cfg.workers, pin_memory=True,
-#             collate_fn=collate_with_transform_segmentation(transform, image_size)
-#         )
-#         val_loader = DataLoader(
-#             val_ds, batch_size=cfg.batch_size, shuffle=False,
-#             num_workers=cfg.workers, pin_memory=True,
-#             collate_fn=collate_with_transform_segmentation(transform, image_size)
-#         )
-#         criterion = nn.CrossEntropyLoss(ignore_index=255)
-
-#     return train_loader, val_loader, criterion
-
 
 def setup_model(cfg, device):
     """Setup model with appropriate fine-tuning strategy"""
