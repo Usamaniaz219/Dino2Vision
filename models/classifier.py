@@ -9,7 +9,7 @@ from functools import partial
 import timm
 
 
-class DinoV3BackboneWrapper(nn.Module):
+class DinoV2BackboneWrapper(nn.Module):
     """
     Wrapper for DINOv3 backbones to provide consistent interface.
     """
